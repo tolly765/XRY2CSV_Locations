@@ -1,9 +1,11 @@
 import csv
 from itertools import chain
 import os
+import sys
 
-file = "PBZ2"
-locationFile = open(f"./Locations/{file}.txt")
+
+file = sys.argv[1]
+locationFile = open(f"./{file}.txt")
 parse = True
 lineList = []
 uncleanList = []
